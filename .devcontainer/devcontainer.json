@@ -1,0 +1,15 @@
+{
+    "image": "node:19",
+	"shutdownAction": "stopContainer",
+    "forwardPorts": [80, 8080, 8000],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"formulahendry.auto-rename-tag",
+				"meganrogge.template-string-converter",
+				"ritwickdey.LiveServer",
+				"shardulm94.trailing-spaces"
+			]
+		}
+	}
+}
