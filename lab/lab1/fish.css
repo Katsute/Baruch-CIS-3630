@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body {
+
+    background-color: #00AAFF;
+    color: #221811;
+    font-family: Arial, Verdana, sans-serif;
+
+}
+
+h1, h2 {
+
+    background-color: #002CFF;
+    color: white;
+    line-height: 300%;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    text-shadow: 3px 3px 3px #CCC;
+
+}
+
+nav {
+
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25em;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+}
+
+.pics {
+
+    text-align: center;
+
+}
+
+footer {
+
+    background-color: #002CFF;
+    font-size: .75em;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    padding: 1em;
+
+}
+
+footer a {
+
+    color: yellow;
+
+}
+
+#wrapper {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
