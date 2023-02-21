@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+
+    background-color: #293D89;
+    color: white;
+    padding: 10px;
+    background-image: url("images/turtle.jpg");
+    background-repeat: no-repeat;
+    height: 130px;
+    width: auto;
+    margin-top: 0;
+
+}
+
+nav ul {
+
+    list-style: none;
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: 0;
+    padding-left: 10%;
+
+}
+
+nav li {
+
+    display: inline;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+}
+
+nav a:link {
+
+    color: #293D89;
+
+}
+
+nav a:visited {
+
+    color: #000066;
+
+}
+
+nav a:hover {
+
+    color: lightskyblue;
+
+}
+
+nav {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+
+}
+
+.topimage {
+
+    background-image: url("images/turtlebay.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 32em;
+    background-repeat: no-repeat;
+
+}
+
+main {
+
+    display: block;
+    padding: 6em;
+    background-color: #FFF;
+    color: #000;
+    background-image: linear-gradient(#C2DFFC, #1E429E);
+
+}
+
+#floatright {
+
+    margin: 10px;
+    float: right;
+
+}
+
+aside {
+
+    float: right;
+    width: 200px;
+    letter-spacing: 0.1em;
+    background-color: lightskyblue;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+img {
+
+    border-radius: 40px;
+
+}
+
+aside h2 {
+
+    color: white;
+
+}
+
+footer {
+
+    font-size: 70%;
+    text-align: center;
+    padding:  20px;
+
+}

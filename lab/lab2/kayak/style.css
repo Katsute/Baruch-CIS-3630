@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: white;;
+}
+
+
+main { display: block;
+       padding: 3em;
+       background-color: #FFFFFF;
+       color: #000000;
+}
+
+header { background-color: #37473f;
+        color: white;
+        font-size: 150%;
+        padding: 10px 10px 10px 200px;
+		background-image: url(images/logo3.png);
+		background-repeat: no-repeat;
+		height: 130px;
+		margin-top: 0;
+
+}
+
+.topimage {
+
+	background-image: url(images/pink.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 25em;;
+}
+
+h2 { color: seagreen;
+     font-family: arial, sans-serif;
+}
+
+#floatright { margin: 10px;
+             float: right;
+}
+
+aside{ float: right;
+	width: 200px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	background-color: burlywood;
+	margin-left: 30px;
+	padding:20px;
+	border-radius: 40px;}
+
+footer { font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding-bottom:20px;
+}
+
+	img {border-radius: 40px;}
+nav { position: sticky;
+      top: 0; left: 0;
+      height: 40px;
+	  width: 100%; min-width: 40em;
+      background-color:darkseagreen;
+	  color: white;
+      z-index: 9999; }
+nav ul { list-style-type: none;
+         font-size: 1.5em;
+		 text-align: right;
+         margin-top: 0;
+         padding-right: 10%;
+}
+nav li { display: inline; }
+nav a  { text-decoration: none;
+         padding-right: 10px;
+}
+
+
+nav a:link { color: #293D89; }
+nav a:visited { color: #000066; }
+nav a:hover { color: #FFFFFF; }
