@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#id {
+
+    float: left;
+    background: tan;
+    font-family: Verdana, sans-serif;
+    font-size: large;
+    padding: 20px;
+
+}
