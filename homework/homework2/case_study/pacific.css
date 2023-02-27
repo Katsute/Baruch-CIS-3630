@@ -1,6 +1,11 @@
-body { background-color: #90C7E3;
-       background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
-       background-repeat: no-repeat; 
+* {
+
+    box-sizing: border-box;
+
+}
+
+body { background-color: #EAEAEA;
+
        color: #666666;
 	   font-family: Verdana, Arial, sans-serif;
 }
@@ -12,37 +17,93 @@ body { background-color: #90C7E3;
 		   min-width: 960px;
 		   max-width: 2048px;
 		   box-shadow: 3px 3px 3px #777;
+
+           background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
 }
+
 header { background-color: #002171;
-         background-image: url(sunset.jpg);
 		 background-position: right;
 		 background-repeat: no-repeat;
          color: #FFFFFF;
 		 font-family: Georgia, serif;
-		 height: 72px;
+
+		 height: 120px;
 }
+
 h1 { text-align: center;
-     padding-top: .5em; }
+     padding-top: .5em;
+
+     font-size: 3em;
+     letter-spacing: 0.25em;
+}
+
 h2 { color: #1976D2;
-     font-family: Georgia, serif; 
+     font-family: Georgia, serif;
 }
 h3 { font-family: Georgia, serif; }
-nav { font-weight: bold; 
+
+nav { font-weight: bold;
 	  padding-top: .5em;
 	  padding-right: .5em;
 	  padding-bottom: .5em;
-	  text-align: center;
+
+      float: left;
+      width: 160px;
+      padding: 0;
+      font-size: 1.2em;
+
+      position: fixed;
 }
+
 nav a { text-decoration: none; }
+
+nav a:link {
+
+    color: #5C7FA3;
+
+}
+
+nav a:visited {
+
+    color: #344873;
+
+}
+
+nav a:hover {
+
+    color: #A52A2A;
+
+}
+
+nav ul {
+
+    list-style: none;
+    padding-left: 1em;
+
+}
+
 main { padding-left: 2em;
        padding-right: 2em;
-       display: block; }
+       display: block;
+
+       background: #FFFFFF;
+       margin-left: 170px;
+       overflow: auto;
+}
+
 dt { color: #002171;
      font-weight: bold;
 }
 .resort { color: #1976D2;
           font-size: 1.2em;
 }
+
+#homehero, #yurthero, #trailhero {
+
+    margin-left: 170px;
+
+}
+
 #homehero { height: 300px;
             background-image: url(coast.jpg);
   			background-repeat: no-repeat;
@@ -55,9 +116,40 @@ dt { color: #002171;
 #trailhero { height: 300px;
             background-image: url(trail.jpg);
   			background-repeat: no-repeat;
-            background-size: 100% 100%; }			
+            background-size: 100% 100%; }
+
 footer { font-size: .70em;
          font-style: italic;
 		 text-align: center;
 		 padding: 1em;
+
+         background: #FFFFFF;
+         margin-left: 170px;
+}
+
+section {
+
+    float: left;
+    width: 33%;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+header a {
+
+    text-decoration: none;
+
+}
+
+header a:link, header a:visited {
+
+    color: #FFFFFF;
+
+}
+
+header a:hover {
+
+    color: #90C7E3;
+
 }
