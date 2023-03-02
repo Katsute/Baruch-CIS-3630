@@ -1,6 +1,5 @@
 {
     "image": "node:19",
-	"shutdownAction": "stopContainer",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -10,5 +9,7 @@
 			]
 		}
 	},
+	"postAttachCommand": "cd project; npm i; cd ../",
+	"shutdownAction": "stopContainer",
     "forwardPorts": [80]
 }
