@@ -9,7 +9,19 @@ on:
 jobs:
   npm_ci:
     name: npm CI
-    uses: Katsute/Workflows/.github/workflows/npm.ci.yml@main
-    with:
-      codeql: false
-      test: false
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: project
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          architecture: x64
+          node-version: 19
+
+      - name: Build
+        run: npm i
