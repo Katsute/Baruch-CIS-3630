@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-family: Helvetica, Arial, sans-serif; }
+
+main { display: block;
+       padding: 3em;
+       background-color: #FFFFFF;
+       color: #000000;
+       background-image: linear-gradient(#c2dffc,#1e429e);
+}
+
+
+header { background-color: #37473f;
+        color: white;
+        font-size: 150%;
+        padding: 10px 10px 10px 10px;
+		background-image: url(images/turtle.jpg);
+		background-repeat: no-repeat;
+		height: 130px;
+         width: auto;
+		margin-top: 0;
+
+}
+
+.topimage {
+	background-image: url(images/turtlebay.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 25em;;
+    background-repeat: no-repeat;
+}
+
+h2 { color: #000066;
+     font-family: arial, sans-serif;
+}
+
+#floatright { margin: 10px;
+             float: right;
+}
+
+aside{ float: right;
+	width: 200px;
+	letter-spacing: 0.1em;
+	background-color:lightskyblue;
+	margin-left: 30px;
+	padding:20px;
+	border-radius: 40px;
+    }
+
+aside h2 {color:white;}
+
+
+footer { font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding:20px;
+}
+
+img {border-radius: 40px;
+
+    height: auto;
+    max-width: 100%;
+}
+
+nav {
+
+    background-color:white;
+    font-size: 1.25em;
+    text-align: center;
+
+}
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav li {
+
+    border-bottom: 2px solid navy;
+    padding: .5em 1em;
+    width: 100%;
+
+}
+nav a  { text-decoration: none; }
+nav a:link { color: #293D89; }
+nav a:visited { color: #000066; }
+nav a:hover { color: lightskyblue; }
+
+@media(min-width: 600px){
+
+    nav ul {
+
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+
+    }
+
+    nav li {
+
+        border-bottom: none;
+        width: 12em;
+
+    }
+
+}
+
+@media(min-width: 1024px){
+
+    nav ul {
+
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    #wrapper {
+
+        margin: auto;
+        width: 80%;
+
+    }
+
+}

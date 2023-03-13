@@ -1,0 +1,52 @@
+/* CSS Document */
+
+
+/* change the navbar text size*/
+
+.nav-link{
+
+    font-size: 1.3em;
+    color: white;
+
+}
+
+
+/* Carousel */
+
+.carousel {
+  margin-bottom: 4rem;
+
+}
+
+.carousel-inner img {
+	object-fit: cover;
+	 height: 40rem;
+  }
+
+/* Footer */
+
+footer {
+
+    padding: 2rem;
+    text-align: center;
+    color: white;
+
+}
+
+/* Hero Image */
+
+.herotext {
+
+}
+
+.heroimage {
+
+
+}
+
+
+/* Cards */
+
+.card {
+
+}
