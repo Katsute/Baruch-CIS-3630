@@ -7,7 +7,7 @@ const sass = require("sass");
 let folder = path.join(__dirname, "site", "dependencies", "css");
 
 fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
-fs.writeFileSync(path.join(folder, "style.css"), sass.compile(path.join(__dirname, "src", "dependencies", "css", "style.scss")).css);
+fs.writeFileSync(path.join(folder, "style.css"), sass.compile(path.join(__dirname, "src", "dependencies", "css", "style.css")).css);
 
 //
 
