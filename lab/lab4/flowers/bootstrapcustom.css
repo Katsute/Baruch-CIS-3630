@@ -1,0 +1,66 @@
+/* CSS Document */
+
+
+/* change the navbar text size*/
+
+.nav-link{
+	font-size: 1.3em;
+	color: white;
+	}
+
+/* Carousel */
+
+.carousel {
+  margin-bottom: 4rem;
+
+}
+
+.carousel-inner img {
+	object-fit: cover;
+	 height: 40rem;
+  }
+
+/* Footer */
+
+footer {
+	padding:2rem;
+	text-align: center;
+	color: white;
+    margin-top: 5rem;
+
+}
+
+/* Hero Image */
+
+.herotext {
+
+    color: white;
+    padding-top: 15rem;
+    padding-left: 5rem;
+
+    font-size: 3rem;
+
+}
+
+.heroimage {
+
+    background-image: url("images/rose.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 40rem;
+    margin-bottom: 5rem;
+
+}
+
+
+/* Cards */
+
+.card {
+
+    margin: 5rem 0;
+
+}
+
+.accordion {}

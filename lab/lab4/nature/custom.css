@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Titles */
+
+h1, h2 {
+
+    font-size: 3em;
+    font-family: 'Alkatra', 'Germania One', cursive;
+
+}
+
+/* Paragraphs */
+
+p {
+
+    font-size: 1.2em;
+    font-family: 'Montserrat', 'Quicksand', sans-serif;
+
+}
+
+
+/* Nav*/
+
+.navbar-nav {
+
+    font-size: 1.5em;
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+
+}
+
+/* Icon*/
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
+body {
+  padding-top: 3.5rem;
+}
+
+.walk {
+	background-image: url(images/flower1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    	padding-top: 10em;
+	padding-bottom: 10em;
+	z-index: -100;
+}
+
+.nature {
+	background-image: url(images/roses.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    	padding-top: 10em;
+	padding-bottom: 10em;
+	z-index: -100;}
+
+
+.contact {
+	background-image: url(images/rose2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	    padding-top: 10em;
+	padding-bottom: 10em;
+    	position: relative;
+	z-index: -100;
+}
+
+.about {
+	background-image: url(images/rose.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 10em;
+	padding-bottom: 10em;
+    	position: relative;
+	z-index: -100;
+}
+
+.display-3 {color:white;}
+
+.jumbotron p {color: lightgrey;}
+
+video, iframe {max-width: 100%;
+		}
+
+
+@media only screen and (max-width: 600px) {
+#piechart_3d {display: none;}
+}
