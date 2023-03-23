@@ -16,7 +16,7 @@
     "homepage": "https://github.com/Katsute/Baruch-CIS-3630#readme",
     "devDependencies": {
         "bootstrap": "5.2.3",
-        "rimraf": "4.4.0",
-        "sass": "1.59.2"
+        "rimraf": "4.4.1",
+        "sass": "1.59.3"
     }
 }
