@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Styles for img and body */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form-signin {
+  max-width: 530px;
+  padding: 15px;
+}
+
+nav.navbar { background-color: black;}
+
+img {height: auto; max-width: 100%}
+body {margin-right:auto;
+	  margin-left: auto;
+	  width: 80%;
+	 font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+.bird {float:left}
+
+.info {background-color: black;
+	   color:white;
+	   text-align: center;
+	   padding-top:2em; padding-bottom:9.1em;}
+
+h2 {background-color: black; color: white;
+				padding:1em; font-size:1.2em;
+			 	text-align:center;}
+.thanks {
+  background-image: url("images/thanks.jpg");
+  min-height: 900px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thanks2 {
+  background-image: url("images/candy.jpg");
+  min-height: 900px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  position:sticky;
+  right: 30%;
+  top: 17%;
+  text-align: center;;
+}
+
+h1 {text-align: center;}
+
+/* Styles for forms */
+
+input#firstName:focus:invalid,
+input#lastName:focus:invalid,
+input#username:focus:invalid {
+
+    background: #FFF8C4 url("images/red.png") right/contain no-repeat;
+
+}
+
+input#firstName:focus:valid,
+input#lastName:focus:valid,
+input#username:focus:valid {
+
+    background: white url("images/green.png") right/contain no-repeat;
+
+}

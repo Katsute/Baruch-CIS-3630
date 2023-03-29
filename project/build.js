@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { dirname } = require("path");
 const path = require("path");
 const sass = require("sass");
 
@@ -26,6 +27,16 @@ fs.copyFileSync(
 
 //
 
+folder = path.join(__dirname, "site", "dependencies", "assets");
+fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
+
+fs.copyFileSync(
+    path.join(__dirname, "Logo.png"),
+    path.join(__dirname, "site", "dependencies", "assets", "logo.png")
+);
+
+//
+
 const def = fs.readFileSync(path.join(__dirname, "template", "default.html"), "utf-8");
 
 for(const file of fs.readdirSync(path.join(__dirname, "src"), {withFileTypes: true})
@@ -38,10 +49,11 @@ for(const file of fs.readdirSync(path.join(__dirname, "src"), {withFileTypes: tr
             .replace(/( *){{ *content *}}/gm, (_, indent,) =>
                 fs // {{ .html }}
                     .readFileSync(path.join(__dirname, "src", file), "utf-8")
-                    .replace(/( *){{(.*)}}/gm, (_, indent, template) =>
-                        fs.readFileSync(path.join(__dirname, "template", template.trim()), "utf-8")
-                            .replace(/^/gm, indent)
-                    )
+                    .replace(/^/gm, indent)
+            )
+            // {{ .html }}
+            .replace(/( *){{(.*)}}/gm, (_, indent, template) =>
+                fs.readFileSync(path.join(__dirname, "template", template.trim()), "utf-8")
                     .replace(/^/gm, indent)
             )
             .replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g, '') // comments
