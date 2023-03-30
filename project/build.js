@@ -1,41 +1,32 @@
 const fs = require("fs");
-const { dirname } = require("path");
 const path = require("path");
-const sass = require("sass");
 
-//
+// css
 
 let folder = path.join(__dirname, "site", "dependencies", "css");
-
 fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
-fs.writeFileSync(path.join(folder, "style.css"), sass.compile(path.join(__dirname, "src", "dependencies", "css", "style.css")).css);
 
-//
+fs.copyFileSync(
+    path.join(__dirname, "src", "dependencies", "css", "style.css"),
+    path.join(folder, "style.css")
+);
+
+// js
 
 folder = path.join(__dirname, "site", "dependencies", "js");
 fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
 
-fs.copyFileSync(
-    path.join(__dirname, "node_modules", "bootstrap", "dist", "css", "bootstrap.min.css"),
-    path.join(__dirname, "site", "dependencies", "css", "bootstrap.min.css")
-);
-
-fs.copyFileSync(
-    path.join(__dirname, "node_modules", "bootstrap", "dist", "js", "bootstrap.min.js"),
-    path.join(__dirname, "site", "dependencies", "js", "bootstrap.min.js")
-);
-
-//
+// assets
 
 folder = path.join(__dirname, "site", "dependencies", "assets");
 fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
 
 fs.copyFileSync(
     path.join(__dirname, "Logo.png"),
-    path.join(__dirname, "site", "dependencies", "assets", "logo.png")
+    path.join(folder, "logo.png")
 );
 
-//
+// html
 
 const def = fs.readFileSync(path.join(__dirname, "template", "default.html"), "utf-8");
 

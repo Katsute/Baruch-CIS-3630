@@ -1,5 +1,9 @@
 @charset "utf-8";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+
+    font-family: "Lexend Deca", "Roboto", "Segoe UI Adjusted", "Segoe UI", "Open Sans", "Helvetica", "Arial", sans-serif, "Segoe UI Emoji";
+
+}
