@@ -1,11 +1,11 @@
 {
     "scripts": {
         "// -- dev -- //": "",
-        "clean": "rimraf site",
+        "clean": "node clean.js",
         "prune": "npm prune && npm i --package-lock --ignore-scripts",
         "update": "npm update -D && npm i --package-lock --ignore-scripts && npm prune",
         "// -- build -- //": "",
-        "build:tw": "tailwindcss -m -i src/dependencies/css/tailwind.css -o site/dependencies/css/tailwind.css",
+        "build:tw": "tailwindcss -i src/dependencies/css/tailwind.css -o site/dependencies/css/tailwind.css && node build-post.js",
         "build": "node build.js && npm run build:tw",
         "prepare": "npm run clean && npm run build"
     },
@@ -16,7 +16,6 @@
     "license": "CC-BY-NC-SA-4.0",
     "homepage": "https://github.com/Katsute/Baruch-CIS-3630#readme",
     "devDependencies": {
-        "rimraf": "4.4.1",
         "tailwindcss": "3.3.0"
     }
 }

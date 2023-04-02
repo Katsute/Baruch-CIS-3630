@@ -49,6 +49,7 @@ for(const file of fs.readdirSync(path.join(__dirname, "src"), {withFileTypes: tr
             )
             .replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g, '') // comments
             .replace(/^ +$/gm, "") // trim lines
-            .replace(/(?:\r?\n){2,}/gm, '\n'), // extra newlines
+            .replace(/(?:\r?\n){2,}/gm, '\n') // extra newlines
+            .trim(), // trim
         "utf-8"
     );
