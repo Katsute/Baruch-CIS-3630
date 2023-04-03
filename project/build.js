@@ -1,6 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
+const format = require("html-format");
+const liquid = require("liquidjs");
+
 // css
 
 let folder = path.join(__dirname, "site", "dependencies", "css");
@@ -28,6 +31,10 @@ fs.copyFileSync(
 
 // html
 
+const engine = new liquid.Liquid({
+    partials: path.join(__dirname, "template")
+});
+
 const def = fs.readFileSync(path.join(__dirname, "template", "default.html"), "utf-8");
 
 for(const file of fs.readdirSync(path.join(__dirname, "src"), {withFileTypes: true})
@@ -36,20 +43,14 @@ for(const file of fs.readdirSync(path.join(__dirname, "src"), {withFileTypes: tr
     .filter(f => f.endsWith(".html")))
     fs.writeFileSync(
         path.join(__dirname, "site", file),
-        def // {{ content }}
-            .replace(/( *){{ *content *}}/gm, (_, indent,) =>
-                fs // {{ .html }}
-                    .readFileSync(path.join(__dirname, "src", file), "utf-8")
-                    .replace(/^/gm, indent)
-            )
-            // {{ .html }}
-            .replace(/( *){{(.*)}}/gm, (_, indent, template) =>
-                fs.readFileSync(path.join(__dirname, "template", template.trim()), "utf-8")
-                    .replace(/^/gm, indent)
-            )
-            .replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g, '') // comments
-            .replace(/^ +$/gm, "") // trim lines
-            .replace(/(?:\r?\n){2,}/gm, '\n') // extra newlines
-            .trim(), // trim
+        format(
+            engine.parseAndRenderSync(def, {
+                content: fs.readFileSync(path.join(__dirname, "src", file), "utf-8"),
+            })
+                .replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g, '') // comments
+                .replace(/^ +$/gm, "") // trim lines
+                .replace(/(?:\r?\n){2,}/gm, '\n') // extra newlines
+                .trim() // trim
+        , "    "),
         "utf-8"
     );
