@@ -12,3 +12,21 @@
     font-family: "Lexend Deca", "Roboto", "Segoe UI Adjusted", "Segoe UI", "Open Sans", "Helvetica", "Arial", sans-serif, "Segoe UI Emoji";
 
 }
+
+img[src$=".svg"] {
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.hero {
+
+    background-image: url("../images/solar-field.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

@@ -4,14 +4,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title></title>
+        <link rel="icon" type="image/x-icon" href="dependencies/icons/clear-day.svg">
+
+        <title>Solar Solutions</title>
 
         <link rel="stylesheet" href="dependencies/css/tailwind.css">
         <link rel="stylesheet" href="dependencies/css/style.css">
     </head>
     <body class="min-h-full w-full overflow-auto">
-        {% render 'nav.liquid' %}
+        {% render 'nav.liquid', file: file %}
 
         {{ content }}
+
+        {% render 'footer.liquid', file: file %}
     </body>
 </html>

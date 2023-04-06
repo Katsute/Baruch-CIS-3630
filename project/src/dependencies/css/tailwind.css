@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+
+    @apply scroll-smooth;
+
+}
+
+*::-webkit-scrollbar {
+
+    @apply h-[.4rem] w-[.4rem];
+
+}
+
+*::-webkit-scrollbar-track {
+
+    @apply bg-black;
+
+}
+
+*::-webkit-scrollbar-thumb {
+
+    @apply bg-sky-400 rounded-sm;
+
+}
+
+.flex {
+
+    @apply min-w-0;
+
+}
+
+.button {
+
+    @apply px-4 py-2;
+    @apply rounded-md text-white font-semibold;
+    @apply bg-sky-400 hover:bg-sky-600 duration-300 ease-in-out;
+
+}
+
+.container-lg {
+
+    @apply container mx-auto max-w-screen-xl;
+
+}

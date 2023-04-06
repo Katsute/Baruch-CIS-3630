@@ -4,6 +4,16 @@ const path = require("path");
 const format = require("html-format");
 const liquid = require("liquidjs");
 
+// copy
+
+const copyDir = (src, dest) => {
+    fs.existsSync(dest) || fs.mkdirSync(dest, {recursive: true});
+    for(const file of fs.readdirSync(src, {withFileTypes: true}))
+        file.isDirectory()
+        ? copyDir(path.join(src, file.name), path.join(dest, file.name))
+        : fs.existsSync(path.join(dest, file.name)) || fs.copyFileSync(path.join(src, file.name), path.join(dest, file.name));
+}
+
 // css
 
 let folder = path.join(__dirname, "site", "dependencies", "css");
@@ -29,20 +39,44 @@ fs.copyFileSync(
     path.join(folder, "logo.png")
 );
 
+fs.copyFileSync(
+    path.join(__dirname, "Logo-Alt.png"),
+    path.join(folder, "logo-alt.png")
+);
+
+// icons
+
+copyDir(
+    path.join(__dirname, "src", "dependencies", "icons"),
+    path.join(__dirname, "site", "dependencies", "icons")
+);
+
+// images
+
+copyDir(
+    path.join(__dirname, "src", "dependencies", "images"),
+    path.join(__dirname, "site", "dependencies", "images")
+);
+
 // fonts
 
 folder = path.join(__dirname, "site", "dependencies", "fonts");
 fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
 
 fs.copyFileSync(
-    path.join(__dirname, "node_modules", "@fontsource", "lexend-deca", "files", "lexend-deca-latin-400-normal.woff"),
+    path.join(__dirname, "node_modules", "@fontsource", "lexend-deca", "files", "lexend-deca-latin-300-normal.woff"),
     path.join(folder, "lexend-deca.woff")
 );
 
 // html
 
 const engine = new liquid.Liquid({
-    partials: path.join(__dirname, "template")
+    partials: path.join(__dirname, "template"),
+    strictFilters: true,
+    strictVariables: true,
+    globals: {
+        newline: '\n'
+    }
 });
 
 const def = fs.readFileSync(path.join(__dirname, "template", "default.html"), "utf-8");
@@ -54,9 +88,10 @@ for(const file of fs.readdirSync(path.join(__dirname, "src"), {withFileTypes: tr
     fs.writeFileSync(
         path.join(__dirname, "site", file),
         format(
-            engine.parseAndRenderSync(def, {
-                content: fs.readFileSync(path.join(__dirname, "src", file), "utf-8"),
-            })
+            engine.parseAndRenderSync(
+                def.replace("{{ content }}", fs.readFileSync(path.join(__dirname, "src", file), "utf-8")), {
+                    file: file
+                })
                 .replace(/(<!--.*?-->)|(<!--[\S\s]+?-->)|(<!--[\S\s]*?$)/g, '') // comments
                 .replace(/^ +$/gm, "") // trim lines
                 .replace(/(?:\r?\n){2,}/gm, '\n') // extra newlines
