@@ -29,6 +29,16 @@ fs.copyFileSync(
     path.join(folder, "logo.png")
 );
 
+// fonts
+
+folder = path.join(__dirname, "site", "dependencies", "fonts");
+fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
+
+fs.copyFileSync(
+    path.join(__dirname, "node_modules", "@fontsource", "lexend-deca", "files", "lexend-deca-latin-400-normal.woff"),
+    path.join(folder, "lexend-deca.woff")
+);
+
 // html
 
 const engine = new liquid.Liquid({
