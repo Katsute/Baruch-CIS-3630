@@ -1,0 +1,33 @@
+incentives:
+  - icon: local-shipping
+    alt: shipping icon
+    heading: Free Installation
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
+  - icon: verified
+    alt: warranty icon
+    heading: 10 Year Warranty
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
+  - icon: history
+    alt: clock icon
+    heading: 24/7 Support
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
+
+features:
+  - image: solar-house.jpg
+    alt: solar field
+    heading: Lorem ipsum
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    link: index.html
+    button: Lorem ipsum dolor
+  - image: solar-array.jpg
+    alt: solar array
+    heading: Lorem ipsum
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    link: index.html
+    button: Lorem ipsum dolor
+  - image: solar-roof.jpg
+    alt: solar roof
+    heading: Lorem ipsum
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    link: index.html
+    button: Lorem ipsum dolor

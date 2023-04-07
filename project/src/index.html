@@ -1,80 +1,41 @@
+{% capture heading %}
+<img src="dependencies/icons/clear-day.svg" class="invert mr-2 inline-block">Solar is the future
+{% endcapture %}
+{% assign heading = heading | strip %}
 {% render "hero.liquid"
     class: "home",
-    heading: '<img src="dependencies/icons/clear-day.svg" class="invert mr-2 inline-block">Solar is the future',
+    heading: heading,
     body: "The sustainable energy solution that pays itself back. Invest in low cost solar for your home or business. Earn tax credits for new panel and battery installations.",
     link: "benefits.html",
     button: "Learn More"
 %}
 <div class="container-lg space-y-6">
     <div class="grid grid-cols-1 md:grid-cols-3 space-x-2 py-14">
-{% capture features %}
-local-shipping
-shipping icon
-Free Installation
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
----
-verified
-warranty icon
-10 Year Warranty
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
----
-history
-clock icon
-24/7 Support
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
-{% endcapture %}
-{% assign features = features | strip | split: '---' %}
-        {% for feature in features %}
-            {% assign lines = feature | strip | split: newline %}
+        {% for item in data.index.incentives %}
             <div class="p-4 space-y-2">
-                <img src="dependencies/icons/{{ lines[0] | strip }}.svg" alt="{{ lines[1] }}">
-                <h2 class="text-xl">{{ lines[2] }}</h2>
-                <p>{{ lines[3] }}</p>
+                <img src="dependencies/icons/{{ item.icon }}.svg" alt="{{ item.alt }}">
+                <h2 class="text-xl">{{ item.heading }}</h2>
+                <p>{{ item.body }}</p>
             </div>
         {% endfor %}
     </div>
 </div>
 <div class="container-lg space-y-6">
-{% capture features %}
-solar-house.jpg
-solar field
-Lorem ipsum
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-index.html
-Lorem ipsum dolor
----
-solar-array.jpg
-solar field
-Lorem ipsum
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-index.html
-Lorem ipsum dolor
----
-solar-roof.jpg
-solar field
-Lorem ipsum
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-index.html
-Lorem ipsum dolor
----
-{% endcapture %}
-    {% assign features = features | strip | split: '---' %}
-    {% for feature in features %}
-        {% assign lines = feature | strip | split: newline %}
+    {% for item in data.index.features %}
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="p-4{% cycle '', ' md:order-last' %}">
                 <div class="relative">
-                    <img src="dependencies/images/{{ lines[0] | strip }}" alt="{{ lines[1] }}" class="rounded-md aspect-video">
+                    <img src="dependencies/images/{{ item.image }}" alt="{{ item.alt }}" class="rounded-md aspect-video">
                     <span class="bg-sky-400 rounded-md -z-10
-                                 absolute top-2 left-2  w-full h-full"></span>
+                                 absolute top-2 left-2 w-full h-full"></span>
                 </div>
             </div>
             <div class="p-4 space-y-2">
-                <h2 class="text-xl">{{ lines[2] }}</h2>
-                <p>{{ lines[3] }}</p>
+                <h2 class="text-xl">{{ item.heading }}</h2>
+                <p>{{ item.body }}</p>
                 <div class="flex">
-                    <a href="{{ lines[4] }}">
-                        <p class="button">{{ lines[5] }}</p>
+                    <a href="{{ item.link }}">
+                        <p class="button">{{ item.button }}</p>
                     </a>
                 </div>
             </div>

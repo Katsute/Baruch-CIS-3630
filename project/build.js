@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
+const yaml = require("yaml");
 const format = require("html-format");
 const liquid = require("liquidjs");
 
@@ -24,25 +25,13 @@ fs.copyFileSync(
     path.join(folder, "style.css")
 );
 
-// js
-
-folder = path.join(__dirname, "site", "dependencies", "js");
-fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
-
 // assets
 
 folder = path.join(__dirname, "site", "dependencies", "assets");
 fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
 
-fs.copyFileSync(
-    path.join(__dirname, "Logo.png"),
-    path.join(folder, "logo.png")
-);
-
-fs.copyFileSync(
-    path.join(__dirname, "Logo-Alt.png"),
-    path.join(folder, "logo-alt.png")
-);
+for(const logo of ["logo.png", "logo-alt.png", "logo-sm.png"])
+    fs.copyFileSync(path.join(__dirname, logo), path.join(folder, logo));
 
 // icons
 
@@ -70,13 +59,22 @@ fs.copyFileSync(
 
 // html
 
+const data = {};
+
+for(const file of fs.readdirSync(path.join(__dirname, "data")))
+    data[file.split('.')[0]] = yaml.parse(fs.readFileSync(path.join(__dirname, "data", file), "utf-8"));
+
 const engine = new liquid.Liquid({
     partials: path.join(__dirname, "template"),
     strictFilters: true,
     globals: {
-        newline: '\n'
+        newline: '\n',
+        data
     }
 });
+
+engine.registerFilter("repeat", (initial, repeat) => initial.repeat(repeat));
+engine.registerFilter("rand", (_, min, max) => Math.floor(Math.random() * (max - min + 1)) + min);
 
 const def = fs.readFileSync(path.join(__dirname, "template", "default.html"), "utf-8");
 
@@ -95,6 +93,6 @@ for(const file of fs.readdirSync(path.join(__dirname, "src"), {withFileTypes: tr
                 .replace(/^ +$/gm, "") // trim lines
                 .replace(/(?:\r?\n){2,}/gm, '\n') // extra newlines
                 .trim() // trim
-        , "    "),
+        , "    ", Infinity),
         "utf-8"
     );

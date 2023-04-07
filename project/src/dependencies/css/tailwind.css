@@ -53,3 +53,14 @@
     @apply container mx-auto max-w-screen-xl;
 
 }
+
+form input, form textarea {
+
+    @apply block w-full;
+    @apply border-0 rounded-md shadow-sm;
+    @apply px-4 py-2;
+    @apply placeholder:text-gray-400;
+    @apply ring-1 ring-inset ring-gray-300;
+    @apply focus:ring-2 focus:ring-inset focus:ring-sky-400 duration-300 ease-in-out;
+
+}

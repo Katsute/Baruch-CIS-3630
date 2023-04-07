@@ -1,5 +1,9 @@
+{% capture heading %}
+<img src="dependencies/icons/charging-station.svg" class="invert mr-2 inline-block">Lorem ipsum dolor sit
+{% endcapture %}
+{% assign heading = heading | strip %}
 {% render "hero.liquid"
     class: "storage",
-    heading: "Lorem ipsum dolor sit",
+    heading: heading,
     body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus rerum tempore delectus repudiandae quas autem quia ut, molestias voluptatibus."
 %}

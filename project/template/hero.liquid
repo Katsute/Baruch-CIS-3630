@@ -1,16 +1,16 @@
-<div class="hero-{{ class }}">
+<div class="hero-{{ class | strip }}">
     <div class="bg-black bg-opacity-20 border-b-4 border-b-sky-400">
         <div class="container-lg
                     text-white px-4 pb-10 md:pb-40 py-40
                     max-w-screen-md space-y-5">
             <h1 class="text-5xl flex flex-row">
-                <p class="flex items-center">{{ heading }}</p>
+                <p class="flex items-center">{{ heading | strip }}</p>
             </h1>
-            <p class="text-xl">{{ body }}</p>
+            <p class="text-xl">{{ body | strip }}</p>
             {% if link %}
                 <div class="flex">
-                    <a href="{{ link }}">
-                        <p class="button">{{ button }}</p>
+                    <a href="{{ link | strip }}">
+                        <p class="button">{{ button | strip }}</p>
                     </a>
                 </div>
             {% endif %}
