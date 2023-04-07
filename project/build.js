@@ -73,7 +73,6 @@ fs.copyFileSync(
 const engine = new liquid.Liquid({
     partials: path.join(__dirname, "template"),
     strictFilters: true,
-    strictVariables: true,
     globals: {
         newline: '\n'
     }

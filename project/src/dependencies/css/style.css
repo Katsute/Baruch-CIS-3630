@@ -22,11 +22,40 @@ img[src$=".svg"] {
 
 }
 
-.hero {
+.hero, [class^="hero-"], [class*=" hero-"] {
 
-    background-image: url("../images/solar-field.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+
+.hero-home {
+
+    background-image: url("../images/solar-field.jpg");
+
+}
+
+.hero-benefits {
+
+    background-image: url("../images/solar-field.jpg");
+
+}
+
+.hero-solar {
+
+    background-image: url("../images/solar-field.jpg");
+
+}
+
+.hero-storage {
+
+    background-image: url("../images/solar-field.jpg");
+
+}
+
+.hero-contact {
+
+    background-image: url("../images/solar-field.jpg");
 
 }
