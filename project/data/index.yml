@@ -17,17 +17,17 @@ features:
     alt: solar field
     heading: Lorem ipsum
     body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
+    link: benefits.html
+    button: Learn More
   - image: solar-array.jpg
     alt: solar array
     heading: Lorem ipsum
     body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
+    link: solar.html
+    button: Learn More
   - image: solar-roof.jpg
     alt: solar roof
     heading: Lorem ipsum
     body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
+    link: storage.html
+    button: Learn More

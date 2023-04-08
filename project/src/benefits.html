@@ -1,9 +1,24 @@
-{% capture heading %}
-<img src="dependencies/icons/add-chart.svg" class="invert mr-2 inline-block">Lorem ipsum dolor sit
-{% endcapture %}
-{% assign heading = heading | strip %}
 {% render "hero.liquid"
     class: "benefits",
-    heading: heading,
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus rerum tempore delectus repudiandae quas autem quia ut, molestias voluptatibus."
+    heading: "Sustainable and affordable",
+    body: "Add value to your home or business, without burning a hole in your wallet."
 %}
+<div class="container-lg mt-6">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="p-4 hidden md:block">
+            <div class="relative">
+                <img src="dependencies/images/solar-roof.jpg" alt="alt" class="rounded-md aspect-video">
+                <span class="bg-sky-400 rounded-md -z-10
+                                absolute top-2 left-2 w-full h-full"></span>
+            </div>
+        </div>
+        <dl class="p-4 space-y-6">
+            {% for item in data.benefits %}
+                <div class="space-y-2">
+                    <dt class="font-semibold">{{ item.title }}</dt>
+                    <dd>{{ item.body }}</dd>
+                </div>
+            {% endfor %}
+        </dl>
+    </div>
+</div>

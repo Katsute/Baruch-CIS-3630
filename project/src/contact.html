@@ -1,61 +1,57 @@
-{% capture heading %}
-<img src="dependencies/icons/mail.svg" class="invert mr-2 inline-block">Lorem ipsum dolor sit
-{% endcapture %}
-{% assign heading = heading | strip %}
 {% render "hero.liquid"
     class: "contact",
-    heading: heading,
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus rerum tempore delectus repudiandae quas autem quia ut, molestias voluptatibus."
+    heading: "Contact us",
+    body: "Thinking of going solar? Contact us for a free quote."
 %}
 <div class="container-lg mt-6">
     <div class="grid grid-cols-1 md:grid-cols-2 p-4
                 space-x-0 md:space-x-8 space-y-4 md:space-y-0">
         <div class="space-y-4">
-            <h1 class="text-xl">Lorem ipsum dolor</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reprehenderit neque saepe iure amet aliquid.</p>
+            <h1 class="text-xl">Solar Solutions</h1>
+            <p>Contact us for a free quote for new solar and battery insallations for your home or business.</p>
             <div class="space-y-2">
                 <div class="flex flex-row items-center space-x-2">
                     <img src="dependencies/icons/store.svg" class="w-6">
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>55 Lexington Ave, New York, NY 10010</p>
                 </div>
                 <div class="flex flex-row items-center space-x-2">
                     <img src="dependencies/icons/call.svg" class="w-6">
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>+1 (800) 000 000</p>
                 </div>
                 <div class="flex flex-row items-center space-x-2">
                     <img src="dependencies/icons/mail.svg" class="w-6">
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>contact@solutions.solar</p>
                 </div>
             </div>
             <div class="flex justify-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9771440073932!2d-73.98545018435128!3d40.74052844380626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a7550271dd%3A0xec88233d3a5d270f!2sBaruch%20College!5e0!3m2!1sen!2sus!4v1680902201020!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3022.990343625451!2d-73.983512!3d40.740238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a0ab7d89eb%3A0xbf87ad431830f203!2s55%20Lexington%20Ave%2C%20New%20York%2C%20NY%2010010!5e0!3m2!1sen!2sus!4v1680976166504!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         class="w-full h-full aspect-video rounded-md mt-4"
                         height="300px"
                 ></iframe>
             </div>
         </div>
         <div>
-            <form action="index.html" method="GET"
+            <form action="thanks.html" method="GET"
                   class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="mb-2">
-                    <label for="tba" class="block mb-2">Lorem ipsum</label>
-                    <input type="text" class="form-input">
+                    <label for="tba" class="block mb-2">First Name</label>
+                    <input type="text" placeholder="Enter you first name" required class="form-input">
                 </div>
                 <div class="mb-2 lg:ml-2">
-                    <label for="tba" class="block mb-2">Lorem ipsum</label>
-                    <input type="text" class="form-input">
+                    <label for="tba" class="block mb-2">Last Name</label>
+                    <input type="text" placeholder="Enter your last name" required class="form-input">
                 </div>
                 <div class="mb-2 col-span-full">
-                    <label for="tba" class="block mb-2">Lorem ipsum</label>
-                    <input type="text" class="form-input">
+                    <label for="tba" class="block mb-2">Phone</label>
+                    <input type="tel" placeholder="xxx-xxxx-xxxx" required class="form-input">
                 </div>
                 <div class="mb-2 col-span-full">
-                    <label for="tba" class="block mb-2">Lorem ipsum</label>
-                    <input type="text" class="form-input">
+                    <label for="tba" class="block mb-2">Email</label>
+                    <input type="email" placeholder="you@example.com" required class="form-input">
                 </div>
                 <div class="mb-2 col-span-full">
-                    <label for="tba" class="block mb-2">Lorem ipsum</label>
-                    <textarea class="form-input resize-none" rows="6"></textarea>
+                    <label for="tba" class="block mb-2">Message</label>
+                    <textarea rows="6" placeholder="Enter your message" required class="form-input resize-none"></textarea>
                 </div>
                 <div class="col-span-full">
                     <input type="submit" class="button inline-block">

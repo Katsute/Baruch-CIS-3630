@@ -45,7 +45,7 @@ img[src$=".svg"] {
 
 .hero-solar {
 
-    background-image: url("../images/solar-field.jpg");
+    background-image: url("../images/solar-roof.jpg");
 
 }
 
@@ -57,6 +57,6 @@ img[src$=".svg"] {
 
 .hero-contact {
 
-    background-image: url("../images/solar-field.jpg");
+    background-image: url("../images/solar-hill.jpg");
 
 }
