@@ -7,7 +7,8 @@
 				"ritwickdey.LiveServer",
 				"shardulm94.trailing-spaces",
 				"ecmel.vscode-html-css",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"sissel.shopify-liquid"
 			]
 		}
 	},

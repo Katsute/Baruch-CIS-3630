@@ -1,0 +1,94 @@
+.homeimg {
+
+    background-image: url("images/rose.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#hometext {
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+}
+
+h1 span {
+
+    background-color: rgba(255, 255, 255, 0.5);
+    color: green;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    border-radius: 5px;
+
+}
+
+.flowersimg {
+
+    background-image: url("images/yellow.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.gardenimg {
+
+    background-image: url("images/petal.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.formimg {
+
+    background-image: url("images/forms.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#flowerstext, #gardentext, #formtext, #parktext {
+
+    background-color: white;
+    width: 100%;
+    padding: 70px 5em 3em 5em;
+
+}
+
+.parkimg {
+
+    background-image: url("images/marigold.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer {
+
+    color: white;
+    width: 100%;
+    font-size: 80%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+
+}
