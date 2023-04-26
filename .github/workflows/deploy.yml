@@ -1,8 +1,8 @@
 name: Deploy Site
 on:
   workflow_dispatch:
-#   push:
-#     branches: [main]
+  push:
+    branches: [main]
 
 jobs:
   deploy:
@@ -28,7 +28,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./project/site
+          publish_dir: ./site
           cname: solar.katsute.dev
           force_orphan: true
           commit_message: ${{ github.event.head_commit.message }}
