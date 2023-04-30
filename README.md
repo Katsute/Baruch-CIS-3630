@@ -6,6 +6,12 @@ Website that allows consumers to review and purchase solar related products.
 
 <https://katsute.github.io/Baruch-CIS-3630>
 
+### Installation
+
+ 1. Download [NodeJS](https://nodejs.org/).
+ 2. `cd project`
+ 3. `npm i`
+
 ### License
 
 This project, including logos, is released under the [CC BY-NC-SA 4.0 License](http://creativecommons.org/licenses/by-nc-sa/4.0/).

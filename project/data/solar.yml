@@ -1,24 +1,24 @@
-tax-credit: .25
+tax-credit: .30
 
 items:
+  - image: solar-house2.jpg
+    alt: solar roof
+    heading: 3kW Lite
+    cost: 9999
+    body: For small homes or apartments.
+    link: contact.html
+    button: Purchase
   - image: solar-house.jpg
-    alt: solar field
-    heading: Lorem ipsum
-    cost: 2999
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
-  - image: solar-house.jpg
-    alt: solar field
-    heading: Lorem ipsum
-    cost: 2499
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
-  - image: solar-house.jpg
-    alt: solar field
-    heading: Lorem ipsum
-    cost: 1999
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
+    alt: solar roof
+    heading: 6kW Standard
+    cost: 15999
+    body: For standard family homes.
+    link: contact.html
+    button: Purchase
+  - image: solar-roof.jpg
+    alt: solar roof
+    heading: 10kW Commercial
+    cost: 29999
+    body: For home and business with high energy usage.
+    link: contact.html
+    button: Purchase

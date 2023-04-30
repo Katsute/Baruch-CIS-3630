@@ -1,22 +1,22 @@
 items:
-  - image: solar-house.jpg
-    alt: solar field
-    heading: Lorem ipsum
-    cost: 2999
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
-  - image: solar-house.jpg
-    alt: solar field
-    heading: Lorem ipsum
-    cost: 2499
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
-  - image: solar-house.jpg
-    alt: solar field
-    heading: Lorem ipsum
-    cost: 1999
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
-    link: index.html
-    button: Lorem ipsum dolor
+  - image: storage-wall.jpg
+    alt: storage battery
+    heading: 4kWh Lite
+    cost: 2799
+    body: For small homes or apartments.
+    link: contact.html
+    button: Purchase
+  - image: storage-home.jpg
+    alt: storage battery
+    heading: 8kWh Standard
+    cost: 5599
+    body: For standard family homes.
+    link: contact.html
+    button: Purchase
+  - image: storage-home.jpg
+    alt: storage battery
+    heading: 12kWh Commercial
+    cost: 8499
+    body: For home and business with high energy usage.
+    link: contact.html
+    button: Purchase
