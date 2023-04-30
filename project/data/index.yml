@@ -2,32 +2,32 @@ incentives:
   - icon: local-shipping
     alt: shipping icon
     heading: Free Installation
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
+    body: Installation is include with all purchases.
   - icon: verified
     alt: warranty icon
     heading: 10 Year Warranty
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
+    body: Panels are built to last, if they don't we will replace them at no cost to you.
   - icon: history
     alt: clock icon
     heading: 24/7 Support
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem quibusdam nobis tenetur rerum dignissimos.
+    body: Contact us any time to resolve any issue with your solar installation.
 
 features:
   - image: solar-house.jpg
     alt: solar field
-    heading: Lorem ipsum
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    heading: Benefits
+    body: Discover the benefits of switching to solar.
     link: benefits.html
     button: Learn More
   - image: solar-array.jpg
     alt: solar array
-    heading: Lorem ipsum
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    heading: Solar Panels
+    body: Solar panels is the investment that keeps on paying.
     link: solar.html
     button: Learn More
   - image: solar-roof.jpg
     alt: solar roof
-    heading: Lorem ipsum
-    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    heading: Energy Storage
+    body: Charge up during the day, keep the lights on during the night.
     link: storage.html
     button: Learn More

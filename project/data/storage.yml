@@ -1,0 +1,22 @@
+items:
+  - image: solar-house.jpg
+    alt: solar field
+    heading: Lorem ipsum
+    cost: 2999
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    link: index.html
+    button: Lorem ipsum dolor
+  - image: solar-house.jpg
+    alt: solar field
+    heading: Lorem ipsum
+    cost: 2499
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    link: index.html
+    button: Lorem ipsum dolor
+  - image: solar-house.jpg
+    alt: solar field
+    heading: Lorem ipsum
+    cost: 1999
+    body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium maxime excepturi quibusdam dicta qui laudantium nemo, autem ducimus nam explicabo.
+    link: index.html
+    button: Lorem ipsum dolor

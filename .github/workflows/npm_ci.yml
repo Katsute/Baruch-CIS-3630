@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           architecture: x64
-          node-version: 19
+          node-version: 20
 
       - name: Build
         run: npm i
