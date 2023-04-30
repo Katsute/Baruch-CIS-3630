@@ -2,11 +2,11 @@ incentives:
   - icon: local-shipping
     alt: shipping icon
     heading: Free Installation
-    body: Installation is include with all purchases.
+    body: From shipping to installation, everything is included with your purchase. After you buy, you don't have to lift a finger.
   - icon: verified
     alt: warranty icon
     heading: 10 Year Warranty
-    body: Panels are built to last, if they don't we will replace them at no cost to you.
+    body: Panels are built to last, if they don't, we will replace and install them at no cost to you.
   - icon: history
     alt: clock icon
     heading: 24/7 Support
@@ -16,18 +16,18 @@ features:
   - image: solar-house.jpg
     alt: solar field
     heading: Benefits
-    body: Discover the benefits of switching to solar.
+    body: Discover the benefits of switching to solar. From low costs, to increased home value, to energy security, there are countless reasons to make the switch.
     link: benefits.html
     button: Learn More
   - image: solar-array.jpg
     alt: solar array
     heading: Solar Panels
-    body: Solar panels is the investment that keeps on paying.
+    body: Solar panels are the investment that keeps on paying. Every new installation is built specific to your roof. Contract us for your home or business.
     link: solar.html
-    button: Learn More
+    button: View Solar Panels
   - image: solar-roof.jpg
     alt: solar roof
     heading: Energy Storage
-    body: Charge up during the day, keep the lights on during the night.
+    body: Charge up during the day, keep the lights on during the night. Store excess solar when you need it. Stay powered during summer or winter blackouts.
     link: storage.html
-    button: Learn More
+    button: View Energy Storage

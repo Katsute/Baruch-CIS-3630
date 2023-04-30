@@ -17,7 +17,6 @@
                 <h2 class="text-3xl">{{ item.heading }}</h2>
                 <span class="flex flex-row space-x-2">
                     <p class="text-2xl">${{ item.cost }}</p>
-                    <p class="line-through text-red-400">${{ item.cost }}</p>
                 </span>
                 {% assign stars = 0 | rand: 3, 5 %}
                 {% assign not = 5 | minus: stars %}
