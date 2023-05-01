@@ -8,7 +8,7 @@ Website that allows consumers to review and purchase solar related products.
 
 ### Installation
 
- 1. Download [NodeJS](https://nodejs.org/).
+ 1. Download [NodeJS](https://nodejs.org/)
  2. `cd project`
  3. `npm i`
 
