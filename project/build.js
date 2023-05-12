@@ -30,7 +30,7 @@ fs.copyFileSync(
 folder = path.join(__dirname, "site", "dependencies", "assets");
 fs.existsSync(folder) || fs.mkdirSync(folder, {recursive: true});
 
-for(const logo of ["logo.png", "logo-alt.png", "logo-sm.png"])
+for(const logo of ["logo.png", "logo-alt.png", "logo-sm.png", "logo.ico"])
     fs.copyFileSync(path.join(__dirname, logo), path.join(folder, logo));
 
 // icons
