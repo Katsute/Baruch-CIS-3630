@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@font-face {
+
+    font-family: "Lexend Deca";
+    src: url("../fonts/lexend-deca.woff") format("woff");
+
+}
+
+* {
+
+    font-family: "Lexend Deca", "Roboto", "Segoe UI Adjusted", "Segoe UI", "Open Sans", "Helvetica", "Arial", sans-serif, "Segoe UI Emoji";
+    outline: none;
+
+}
+
+img[src$=".svg"] {
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.hero, [class^="hero-"], [class*=" hero-"] {
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hero-home {
+
+    background-image: url("../images/solar-field.jpg");
+
+}
+
+.hero-benefits {
+
+    background-image: url("../images/solar-field2.jpg");
+
+}
+
+.hero-solar {
+
+    background-image: url("../images/solar-roof.jpg");
+
+}
+
+.hero-storage {
+
+    background-image: url("../images/storage-home.jpg");
+
+}
+
+.hero-contact {
+
+    background-image: url("../images/solar-hill.jpg");
+
+}

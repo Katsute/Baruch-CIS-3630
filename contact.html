@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="flex min-h-full">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="dependencies/assets/logo.ico">
+        <link rel="icon" type="image/png" href="dependencies/assets/logo-sm.png">
+        <title>Solar Solutions</title>
+        <link rel="stylesheet" href="dependencies/css/tailwind.css">
+        <link rel="stylesheet" href="dependencies/css/style.css">
+    </head>
+    <body class="min-h-full w-full overflow-auto">
+        <nav class="absolute w-full">
+            <div class="container-lg
+                flex justify-between items-center
+                flex-col md:flex-row
+                px-2">
+                <a href="index.html" class="px-2 py-4 md:py-2">
+                    <img src="dependencies/assets/logo-alt.png" class="h-6">
+                </a>
+                <ul class="flex flex-wrap justify-center text-lg text-white">
+                    <li class="box-border border-b-[3px] border-b-transparent md:hover:border-b-sky-400
+                        md:hover:text-sky-400 duration-300 ease-in-out">
+                        <a href="index.html" class="flex items-center p-2">Home</a>
+                    </li>
+                    <li class="box-border border-b-[3px] border-b-transparent md:hover:border-b-sky-400
+                        md:hover:text-sky-400 duration-300 ease-in-out">
+                        <a href="benefits.html" class="flex items-center p-2">Benefits</a>
+                    </li>
+                    <li class="box-border border-b-[3px] border-b-transparent md:hover:border-b-sky-400
+                        md:hover:text-sky-400 duration-300 ease-in-out">
+                        <a href="solar.html" class="flex items-center p-2">Solar Panels</a>
+                    </li>
+                    <li class="box-border border-b-[3px] border-b-transparent md:hover:border-b-sky-400
+                        md:hover:text-sky-400 duration-300 ease-in-out">
+                        <a href="storage.html" class="flex items-center p-2">Energy Storage</a>
+                    </li>
+                    <li class="box-border border-b-[3px] border-b-transparent md:hover:border-b-sky-400
+                        md:hover:text-sky-400 duration-300 ease-in-out">
+                        <a href="contact.html" class="flex items-center p-2">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-contact">
+            <div class="bg-black bg-opacity-30 border-b-4 border-b-sky-400">
+                <div class="container-lg
+                    text-white px-4 pb-10 md:pb-40 py-40
+                    max-w-screen-md space-y-5">
+                    <h1 class="text-4xl md:text-5xl">Contact us</h1>
+                    <p class="text-lg md:text-xl">Thinking of going solar? Contact us for a free quote.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 p-4
+                space-x-0 md:space-x-8 space-y-4 md:space-y-0">
+                <div class="space-y-4">
+                    <h1 class="text-xl">Solar Solutions</h1>
+                    <p>Contact us for a free quote for new solar and battery insallations for your home or business.</p>
+                    <div class="space-y-2">
+                        <div class="flex flex-row items-center space-x-2">
+                            <img src="dependencies/icons/store.svg" class="w-6">
+                            <p>55 Lexington Ave, New York, NY 10010</p>
+                        </div>
+                        <div class="flex flex-row items-center space-x-2">
+                            <img src="dependencies/icons/call.svg" class="w-6">
+                            <p>+1 (800) 000 000</p>
+                        </div>
+                        <div class="flex flex-row items-center space-x-2">
+                            <img src="dependencies/icons/mail.svg" class="w-6">
+                            <p>contact@solutions.solar</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3022.990343625451!2d-73.983512!3d40.740238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a0ab7d89eb%3A0xbf87ad431830f203!2s55%20Lexington%20Ave%2C%20New%20York%2C%20NY%2010010!5e0!3m2!1sen!2sus!4v1680976166504!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full aspect-video rounded-md mt-4"
+                            height="300px"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <form action="thanks.html" method="GET"
+                        class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="mb-2">
+                            <label for="tba" class="block mb-2">First Name</label>
+                            <input type="text" placeholder="Enter you first name" required class="form-input">
+                        </div>
+                        <div class="mb-2 lg:ml-2">
+                            <label for="tba" class="block mb-2">Last Name</label>
+                            <input type="text" placeholder="Enter your last name" required class="form-input">
+                        </div>
+                        <div class="mb-2 col-span-full">
+                            <label for="tba" class="block mb-2">Phone</label>
+                            <input type="tel" placeholder="xxx-xxxx-xxxx" required class="form-input">
+                        </div>
+                        <div class="mb-2 col-span-full">
+                            <label for="tba" class="block mb-2">Email</label>
+                            <input type="email" placeholder="you@example.com" required class="form-input">
+                        </div>
+                        <div class="mb-2 col-span-full">
+                            <label for="tba" class="block mb-2">Message</label>
+                            <textarea rows="6" placeholder="Enter your message" required class="form-input resize-none"></textarea>
+                        </div>
+                        <div class="col-span-full">
+                            <input type="submit" class="button inline-block">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mt-6">
+            <div class="container-lg p-4
+                flex justify-center md:justify-between
+                flex-col md:flex-row">
+                <p class="text-gray-400 text-sm text-center md:text-left">Copyright &copy; 2023 Solar Solutions</p>
+                <p class="text-gray-400 text-sm text-center md:text-left">
+                    Licensed under
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        class="underline">CC BY-NC-SA 4.0</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
